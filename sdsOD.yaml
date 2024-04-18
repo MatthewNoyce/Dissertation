@@ -1,0 +1,16 @@
+path: G:\SDSOD\YoloFormat # dataset root dir
+train: images/train # train images (relative to 'path') 118287 images
+val: images/val # val images (relative to 'path') 5000 images
+test: images/test # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+# Classes
+names:
+  0: ignored
+  1: swimmer
+  2: floater
+  3: boat
+  4: swimmer on boat
+  5: floater on boat
+  6: life jacket
+  7: ignored 
+  #yolo train model=C:\Users\matth\Documents\objectdetection\ultralytics-main\ultralytics-main\ultralytics\cfg\models\rt-detr\rtdetr-resnet50.yaml data=C:\Users\matth\Documents\objectdetection\ultralytics-main\ultralytics-main\ultralytics\cfg\datasets\sdsdetr.yaml epochs=5 imgsz=640
