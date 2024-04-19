@@ -5,9 +5,9 @@ import numpy as np
 
 from ultralytics import YOLO,RTDETR
 
-# Load the YOLOv8 model
-model = YOLO('c:/Users/matth/Documents/objectdetection/graphsandbestmodels/yolov5l/tracking/weights/best.pt')
 
+#model = RTDETR('c:/Users/matth/Documents/objectdetection/graphsandbestmodels/DETR/tracking/rt-detrl/weights/bestrtdetrltracking.pt')
+model = YOLO('c:/Users/matth/Documents/objectdetection/graphsandbestmodels/yolov5l/tracking/weights/bestyv5ltracking.pt')
 # Open the video file
 video_path = "c:/Users/matth/Documents/DroneVideoTrackingandDetection/traces.avi"#/annotatedImForWU/tracestest.avi"#/objectdetection/SDSMOT/sds.avi
 cap = cv2.VideoCapture(video_path)
@@ -21,7 +21,7 @@ while cap.isOpened():
     success, frame = cap.read()
 
     if success:
-        # Run YOLOv8 tracking on the frame, persisting tracks between frames
+        # Run tracking on the frame, persisting tracks between frames
         results = model.track(frame, persist=True, imgsz=992, conf=0.25, tracker="botsort.yaml")
 
         # Get the boxes and track IDs
