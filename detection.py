@@ -1,3 +1,5 @@
+#Runns detection using a trained model and saves results as text files
+
 from ultralytics import RTDETR, YOLO
 import json
 # import os
@@ -9,10 +11,8 @@ def main():
 
     # Define path to directory containing images and videos for inference
     source = 'G:/SDSOD/YoloFormat/images/test/*.png'
-# Run inference on the source
-    #COULD BE WORTH CHANGING CONF TO CONF=0.3 OR LOWER AND SEE IF THAT INCREASES THE MAP
-    #MAYBE CHANGE IOU FROM 0.7 TO SOMETHING LOWER
-    #COULD TRY agnostic_nms AS WELL 
+    # Run inference on the source
+    
     results = model.predict(source=source, save_txt=True, save_conf=True, stream=True, conf=0.5, iou=0.99, imgsz=992) 
     # generator of Results objects
     for result in results:

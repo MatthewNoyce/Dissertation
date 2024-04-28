@@ -1,3 +1,4 @@
+#produces a video and displays it to showcase the models
 import cv2
 from ultralytics import YOLO, RTDETR
 

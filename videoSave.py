@@ -1,3 +1,4 @@
+#saves the video with the annotations on 
 import cv2
 from ultralytics import YOLO, RTDETR
 
@@ -8,14 +9,9 @@ model = YOLO(modelpath)
 # Open the video file
 video_path = "C:/Users/matth/Documents/objectdetection/SDSMOT/sds.avi"
 cap = cv2.VideoCapture(video_path)
-
-# Get video properties
 fps = int(cap.get(cv2.CAP_PROP_FPS))
 width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-
-# Initialize the VideoWriter object
-#fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # or use 'XVID' if 'mp4v' does not work
 out = cv2.VideoWriter('output_video.mp4', fps, (width, height))
 
 # Loop through the video frames

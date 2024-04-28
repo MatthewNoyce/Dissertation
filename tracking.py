@@ -1,3 +1,4 @@
+#Script to save the tracking txt files 
 from ultralytics import YOLO, RTDETR
 import json
 #Needs to be completed, need it to produce an output in the format to upload to the test server

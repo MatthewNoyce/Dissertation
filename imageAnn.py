@@ -40,11 +40,11 @@ def motshow():
 
 def generate_video():
     counter=0
-    image_folder = 'c:/Users/matth/Documents/objectdetection/SDSMOT/images/test'
+    image_folder = 'c:/Users/matth/Documents/objectdetection/SDSMOT/images/train'
     #frames = ["C:/Users/matth/Documents/objectdetection/SDSMOT/images/train/2061.jpg", "C:/Users/matth/Documents/objectdetection/SDSMOT/images/train/2062.jpg", "C:/Users/matth/Documents/objectdetection/SDSMOT/images/train/2063.jpg", "C:/Users/matth/Documents/objectdetection/SDSMOT/images/train/2064.jpg", "C:/Users/matth/Documents/objectdetection/SDSMOT/images/train/2065.jpg", "C:/Users/matth/Documents/objectdetection/SDSMOT/images/train/2066.jpg","C:/Users/matth/Documents/objectdetection/SDSMOT/images/train/2067.jpg", "C:/Users/matth/Documents/objectdetection/SDSMOT/images/train/2068.jpg", "C:/Users/matth/Documents/objectdetection/SDSMOT/images/train/2069.jpg", "C:/Users/matth/Documents/objectdetection/SDSMOT/images/train/2070.jpg", "C:/Users/matth/Documents/objectdetection/SDSMOT/images/train/2071.jpg", "C:/Users/matth/Documents/objectdetection/SDSMOT/images/train/2072.jpg","C:/Users/matth/Documents/objectdetection/SDSMOT/images/train/2073.jpg", "C:/Users/matth/Documents/objectdetection/SDSMOT/images/train/2074.jpg", "C:/Users/matth/Documents/objectdetection/SDSMOT/images/train/2075.jpg"]
     frames = []
     video_name = 'traces.avi'
-    for i in range(53470, 53800):
+    for i in range(32060, 32370):
         # num = str(i)
         # num = "000"+num
         # num = num[-3:]

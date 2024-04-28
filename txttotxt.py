@@ -1,6 +1,6 @@
 import json
 import os
-#need 
+#Not needed anymore, this was for tracking only swimmers which was an expired format for the test server
 
 txtdir = "C:/Users/matth/Documents/DroneVideoTrackingandDetection/runs/detect/track/labels"
 imagefilesinorder = []

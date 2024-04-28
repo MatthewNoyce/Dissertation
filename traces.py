@@ -1,3 +1,5 @@
+#Produces a video with the traces of the objects shown in red behind the objects
+
 from collections import defaultdict
 
 import cv2
@@ -6,8 +8,8 @@ import numpy as np
 from ultralytics import YOLO,RTDETR
 
 
-#model = RTDETR('c:/Users/matth/Documents/objectdetection/graphsandbestmodels/DETR/tracking/rt-detrl/weights/bestrtdetrltracking.pt')
-model = YOLO('c:/Users/matth/Documents/objectdetection/graphsandbestmodels/yolov5l/tracking/weights/bestyv5ltracking.pt')
+model = RTDETR('c:/Users/matth/Documents/objectdetection/graphsandbestmodels/DETR/tracking/rt-detrl/weights/bestrtdetrltracking.pt')
+#model = YOLO('c:/Users/matth/Documents/objectdetection/graphsandbestmodels/yolov5l/tracking/weights/bestyv5ltracking.pt')
 # Open the video file
 video_path = "c:/Users/matth/Documents/DroneVideoTrackingandDetection/traces.avi"#/annotatedImForWU/tracestest.avi"#/objectdetection/SDSMOT/sds.avi
 cap = cv2.VideoCapture(video_path)

@@ -1,3 +1,4 @@
+#scripts to train each model 
 from ultralytics import RTDETR, YOLO
 
 #possibly worth reducing patience down to 20 for detr and yolo5l due to how long they take to train and the last 50 or so epochs give mostly the same value anyway

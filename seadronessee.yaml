@@ -1,0 +1,12 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: C:\Users\matth\Documents\objectdetection\SDSMOT 
+train: images\train 
+val: images\val 
+#test:  
+
+nc: 7
+names: [ignored region, swimmer, swimmer with life jacket, boat, ignored, ignored, life jacket]
+# 0: ignored region
+# 1: swimmer
+# 2: swimmer with life jacket
+#yolo detect train data=C:/Users/matth/Documents/objectdetection/ultralytics-main/ultralytics-main/ultralytics/cfg/datasets/seadronessee.yaml model=yolov5m.yaml epochs=100 imgsz=640
